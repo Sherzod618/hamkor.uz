@@ -1,9 +1,11 @@
 import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Ketchup() {
   const ketchupRef = useRef(null);
+  const { t } = useLanguage();
 
   useGSAP(() => {
     // Ketchup Jar animation
@@ -45,37 +47,37 @@ export default function Ketchup() {
   return (
     <section className="ketchup-section split-section" id="ketchup" ref={ketchupRef}>
       <div className="ketchup-decor-left">
-         <img src="/images/ketchup_decor.png" alt="decor" className="ketchup-decor decor-k-1" data-speed="-0.3" />
+         <img src="images/ketchup_decor.png" alt="decor" className="ketchup-decor decor-k-1" data-speed="-0.3" />
       </div>
       <div className="ketchup-decor-right">
-         <img src="/images/ketchup_decor.png" alt="decor" className="ketchup-decor decor-k-2" data-speed="0.4" />
+         <img src="images/ketchup_decor.png" alt="decor" className="ketchup-decor decor-k-2" data-speed="0.4" />
       </div>
 
       <div className="half-section" style={{background: 'transparent', zIndex: 2}}>
           <div className="max-w fade-in-left">
-              <div className="tagline ketchup-tagline">Hali bunday ta’mni his qilmagansiz</div>
-              <h2 className="section-title">Hamkor Ketchup</h2>
+              <div className="tagline ketchup-tagline">{t('ketchup_tagline')}</div>
+              <h2 className="section-title">{t('ketchup_title')}</h2>
               <div className="title-underline"></div>
               
               <p className="lead-text ketchup-desc" style={{marginBottom: '1rem'}}>
-                <strong>Hamkor Ketchup</strong> — bu oddiy ketchup emas. U maxsus tanlangan mavsumiy pomidorlardan tayyorlanib, o‘ziga xos boy va tabiiy ta’mni taqdim etadi.
+                <strong>Hamkor Ketchup</strong> — {t('ketchup_desc1')}
               </p>
               <p className="ketchup-desc">
-                Har bir tomchida mukammal muvozanat, mayin konsistensiya va yuqori sifat mujassam. Agar siz ketchupni chin dildan yaxshi ko‘rsangiz — bu aynan siz uchun.
+                {t('ketchup_desc2')}
               </p>
 
               <ul className="advantage-list ketchup-features" style={{marginTop: '2rem'}}>
                   <li>
                       <div className="ketchup-icon"><i className="fas fa-fire"></i></div>
-                      <span className="ketchup-feat-text">Har tomchida haqiqiy lazzat</span>
+                      <span className="ketchup-feat-text">{t('ketchup_feat1')}</span>
                   </li>
                   <li>
                       <div className="ketchup-icon"><i className="fas fa-heart"></i></div>
-                      <span className="ketchup-feat-text">Ketchup sevuvchilar uchun yaratilgan</span>
+                      <span className="ketchup-feat-text">{t('ketchup_feat2')}</span>
                   </li>
                   <li>
                       <div className="ketchup-icon"><i className="fas fa-star"></i></div>
-                      <span className="ketchup-feat-text">Oddiy emas — o‘ziga xos ta’m</span>
+                      <span className="ketchup-feat-text">{t('ketchup_feat3')}</span>
                   </li>
               </ul>
           </div>
@@ -83,7 +85,7 @@ export default function Ketchup() {
       
       <div className="half-section" style={{background: 'transparent', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 2}}>
           <div className="ketchup-image-container fade-in-right">
-              <img src="/images/ketchup_jar.png" alt="Hamkor Ketchup" className="ketchup-jar" />
+              <img src="images/ketchup_jar.png" alt="Hamkor Ketchup" className="ketchup-jar" />
           </div>
       </div>
     </section>

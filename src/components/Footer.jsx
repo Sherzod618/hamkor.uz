@@ -25,7 +25,7 @@ export default function Footer() {
                         <li><i className="fas fa-phone"></i> <span>+998 91 212 08 94</span></li>
                         <li><i className="fas fa-envelope"></i> <span>Info@timurhamkor.uz</span></li>
                         <li style={{alignItems: 'center'}}>
-                            <img src="/images/gost.jpg" alt="GOST" style={{height: '30px', marginRight: '10px', background: 'white', borderRadius: '4px', padding: '2px'}} />
+                            <img src="images/gost.jpg" alt="GOST" style={{height: '30px', marginRight: '10px', background: 'white', borderRadius: '4px', padding: '2px'}} />
                             <span>{t('foot_mfg_gost')}</span>
                         </li>
                     </ul>

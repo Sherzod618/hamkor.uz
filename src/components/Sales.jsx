@@ -23,8 +23,8 @@ export default function Sales() {
                                 <i className="fas fa-truck"></i>
                             </div>
                             <div>
-                                <h4>Yetkazib berish xizmati</h4>
-                                <p>Barcha viloyatlarga xavfsiz va tezkor yetkazib berish yo'lga qo'yilgan.</p>
+                                <h4>{t('delivery_title')}</h4>
+                                <p>{t('delivery_desc')}</p>
                             </div>
                         </div>
                     </div>

@@ -265,7 +265,7 @@ h4 {
 .hero {
   height: 100vh;
   min-height: 700px;
-  background: url('/images/Packaging.jpg') center center / cover no-repeat;
+  background: url('images/Packaging.jpg') center center / cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -721,48 +721,40 @@ section {
 .product {
   position: relative;
   overflow: hidden;
-  background-color: #fdfdfd;
+  background: url('images/product_bg_tomato.jpg') center center / cover no-repeat;
+  animation: productBgZoom 18s infinite alternate ease-in-out;
+}
+
+@keyframes productBgZoom {
+  0% { background-size: 100%; }
+  100% { background-size: 110%; }
 }
 
 .product-anim-bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  min-width: 800px;
-  max-width: 1200px;
-  object-fit: contain;
-  z-index: 1;
-  opacity: 0.35;
-  animation: floatProdBg 6s infinite alternate ease-in-out;
-}
-
-@keyframes floatProdBg {
-  0% { transform: translate(-50%, -48%) scale(1) rotate(-1deg); }
-  100% { transform: translate(-50%, -52%) scale(1.03) rotate(1deg); }
+  display: none;
 }
 
 .product-overlay {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.20);
   padding: 90px 0;
   position: relative;
   z-index: 2;
 }
 
 .product-title-white {
-  color: var(--primary-green) !important;
+  color: #6fcf97 !important;
 }
 
 .product-sub-white {
-  color: var(--primary-red) !important;
+  color: #ffcccc !important;
 }
 
 .product-list-white li {
-  color: var(--text-dark) !important;
+  color: #ffffff !important;
 }
 
 .product-list-white li span {
-  color: var(--text-dark) !important;
+  color: #ffffff !important;
 }
 
 .product-list-white i {
@@ -866,7 +858,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/images/burger.png');
+  background-image: url('images/burger.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

@@ -53,10 +53,10 @@ export default function Hero() {
         
         {/* Dekoratsiyalar - Faqat chekkalarda */}
         <div className="decor-left">
-           <img src="/images/floating_decor.png" alt="decor" className="floating-decor decor-1" data-speed="-0.4" />
+           <img src="images/floating_decor.png" alt="decor" className="floating-decor decor-1" data-speed="-0.4" />
         </div>
         <div className="decor-right">
-           <img src="/images/floating_decor.png" alt="decor" className="floating-decor decor-2" data-speed="0.5" />
+           <img src="images/floating_decor.png" alt="decor" className="floating-decor decor-2" data-speed="0.5" />
         </div>
         
         <div className="container hero-content">
@@ -64,7 +64,7 @@ export default function Hero() {
             
             {/* Yangi tasdiqlangan rasmli logotip */}
             <div className="hero-logo-wrap">
-              <img src="/images/logo_final.png" alt="Hamkor Logo" className="hero-final-logo" />
+              <img src="images/logo_final.png" alt="Hamkor Logo" className="hero-final-logo" />
             </div>
             
             <p className="hero-desc">

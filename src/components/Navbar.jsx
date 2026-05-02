@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
         <a href="#" className="logo">
-          <img src="/images/logo.jpg" alt="Hamkor Logo" style={{height: '60px'}} />
+          <img src="images/logo.jpg" alt="Hamkor Logo" style={{height: '60px'}} />
         </a>
         <div className="nav-right">
           <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
@@ -31,6 +31,8 @@ export default function Navbar() {
               <button className={`lang-btn ${lang === 'uz' ? 'active' : ''}`} onClick={() => setLang('uz')}>UZ</button>
               <span>|</span>
               <button className={`lang-btn ${lang === 'ru' ? 'active' : ''}`} onClick={() => setLang('ru')}>RU</button>
+              <span>|</span>
+              <button className={`lang-btn ${lang === 'en' ? 'active' : ''}`} onClick={() => setLang('en')}>EN</button>
             </div>
             <a href="#contact-form-sec" className="btn btn-outline nav-contact-btn">{t('nav_contact')}</a>
           </div>

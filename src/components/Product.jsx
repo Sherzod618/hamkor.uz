@@ -39,7 +39,7 @@ export default function Product() {
     <div ref={productRef}>
       {/* Mahsulot bo'limi — orqa fonda animatsiyali rasm */}
       <section className="product" id="product">
-          <img src="/images/product_bg_anim.png" alt="Animated Background" className="product-anim-bg" />
+          <img src="images/product_bg_anim.png" alt="Animated Background" className="product-anim-bg" />
           <div className="product-overlay">
             <div className="container">
                 <div className="section-header">
@@ -70,7 +70,7 @@ export default function Product() {
                         <p>{t('feat_3_desc')}</p>
                     </div>
                     <div className="feature-card" style={{borderTop: '4px solid #2E7D32'}}>
-                        <div className="icon-box" style={{color: '#2E7D32'}}><i className="fas fa-clock"></i></div>
+                        <div className="icon-box" style={{color: '#2E7D32'}}><i className="fas fa-tag"></i></div>
                         <h4>{t('feat_4_title')}</h4>
                         <p>{t('feat_4_desc')}</p>
                     </div>
@@ -103,7 +103,7 @@ export default function Product() {
                   </div>
                   {/* Hajim rasmi o'rniga yangi yuborilgan rasm */}
                   <div className="volumes-img-wrap">
-                      <img src="/images/new_packaging.jpg" alt="Hamkor qadoq" className="volumes-img" />
+                      <img src="images/new_packaging.jpg" alt="Hamkor qadoq" className="volumes-img" />
                   </div>
               </div>
           </div>
