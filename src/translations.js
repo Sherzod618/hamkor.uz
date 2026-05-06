@@ -10,7 +10,7 @@ export const translations = {
         hero_feat1: "Brix 25+",
         hero_feat2: "Kafolatlangan Sifat",
         hero_feat3: "100% Tabiiy Mahsulot",
-        hero_desc: "Tabiiy ta’m va haqiqiy sifat ",
+        hero_desc: "Tabiiy ta’m va haqiqiy sifat",
         hero_btn_explore: "Mahsulotni ko'rish",
         hero_btn_contact: "Biz bilan bog'lanish",
         about_title: "BIZ HAQIMIZDA",
